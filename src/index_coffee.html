@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js</title>
+</head>
+<body>
+<script>
+
+  var price = 10;
+  for (var i = 0; i < 3; i++)
+  {
+      var coffee = prompt('Введите тип кофе');
+      switch (coffee) {
+          case 'Американно':
+              price = 100;
+              break;
+          case 'Латте':
+              price = 120;
+              break;
+          case 'Эспрессо':
+              price = 130;
+              break;
+      }
+      if (price !== 10 || coffee === null) {
+          break;
+      }
+      if (i !== 2)
+      {
+          alert('Вы неверно выбрали кофе попробуйте еще раз!')
+      }
+  }
+  if (i === 3 || coffee === null)
+  {
+      document.write('<h1>Перезагрузите страницу</h1>');
+  } else
+  {
+      var size = +prompt('Введите размер стакана(100, 200 ,300ml)');
+      if (size !== 100)
+      {
+          switch (size) {
+              case 200:
+                  price += 20;
+                  break;
+              case 250:
+                  price += 40;
+                  break;
+          }
+      }
+      var sugar = +prompt('Введите количество ложек сахара');
+      switch (sugar) {
+          case 1:
+              price += 10;
+              break;
+          case 2:
+              price += 20;
+              break;
+          case 3:
+              price += 30;
+              break;
+      }
+      var sweets = prompt('Кофе скоро будет готов. Желаете чего нибудь сладкого?(Сникерс, Марс, Твикс)');
+      if (sweets !== null)
+      {
+          switch (sweets) {
+              case 'Сникерс':
+                  price += 60;
+                  break;
+              case 'Марс':
+                  price += 70;
+                  break;
+              case 'Твикс':
+                  price += 80;
+                  break;
+          }
+      }
+    document.write(`<style>body{font-size: 40px}</style><p>Ваш <strong>${coffee}</strong> с <strong>${sugar}</strong> сахара.</p>
+                    <p>Общая стоимость <strong>${price}</strong> руб.</p>`)
+
+  }
+
+
+
+</script>
+</body>
+</html>

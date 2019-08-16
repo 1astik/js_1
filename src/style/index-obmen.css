@@ -1,0 +1,15 @@
+.discount-item:hover {
+    cursor: pointer;
+}
+.active {
+    border: 1px solid black;
+}
+.counter {
+    margin-top: 20px;
+}
+.counter input {
+     width: 70px;
+}
+.counter input:hover {
+    cursor: default;
+}

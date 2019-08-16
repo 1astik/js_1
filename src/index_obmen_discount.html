@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Obmen</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="script/obmen_valut.js"></script>
+    <link rel="stylesheet" href="style/index-obmen.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="discount row justify-content-center">
+        <div class="discount-item col-2 text-center d-flex flex-column justify-content-between" id="phone1">
+            <img src="img/phone1.jpg" class="img-fluid">
+            <div class="discount-text">
+                <h3>Phone1</h3>
+                <h5>10 000$</h5>
+            </div>
+        </div>
+        <div class="discount-item col-2 text-center d-flex flex-column justify-content-between" id="phone2">
+            <img src="img/phone2.jpg" class="img-fluid">
+            <div class="discount-text">
+                <h3>Phone2</h3>
+                <h5>2 000$</h5>
+            </div>
+        </div>
+        <div class=" discount-item col-2 text-center d-flex flex-column justify-content-between" id="phone3">
+            <img src="img/phone3.jpg" class="img-fluid">
+            <div class="discount-text">
+                <h3>Phone3</h3>
+                <h5>7 000$</h5>
+            </div>
+        </div>
+        <div class="discount-item col-2 text-center d-flex flex-column justify-content-between" id="phone4">
+            <img src="img/phone4.jpg" class="img-fluid">
+            <div class="discount-text">
+                <h3>Phone4</h3>
+                <h5>5 000$</h5>
+            </div>
+        </div>
+        <div class="discount-item col-2 text-center d-flex flex-column justify-content-between" id="phone5">
+            <img src="img/phone5.jpg" class="img-fluid">
+            <div class="discount-text">
+                <h3>Phone5</h3>
+                <h5>20 000$</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="counter text-right">
+        <h5>Общая сумма</h5>
+        <input type="text" value="0" id="cash" readonly><span>$</span>
+        <button class="btn-success" onclick="obmen()">Купить</button>
+    </div>
+
+    <div class="change text-center">
+        <h3>Обмен валют</h3>
+        <input type="text" id="input" placeholder="Рубли"><span>рубли =</span>
+        <input type="text" id="output-usd"><span>долларов =</span>
+        <input type="text" id="output-uah"><span>гривен</span>
+    </div>
+</div>
+</body>
+</html>
